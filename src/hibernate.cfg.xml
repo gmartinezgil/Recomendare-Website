@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+    	<!-- mysql -->
+    	<!--  
+    	<property name="hibernate.connection.url">jdbc:mysql://localhost/recomendare</property>
+        <property name="hibernate.connection.driver_class">org.gjt.mm.mysql.Driver</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQLInnoDBDialect</property>
+        <property name="hibernate.connection.username">recomendare</property>
+        <property name="hibernate.connection.password">password</property>
+        -->
+        <!-- postgresql -->
+        <property name="connection.url">jdbc:postgresql://localhost/recomendare</property>
+        <property name="connection.driver_class">org.postgresql.Driver</property>
+        <property name="dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+		<property name="connection.username">recomendare</property>
+		<property name="connection.password">password</property>
+		<!-- optimizations -->
+        <property name="hibernate.current_session_context_class">thread</property>
+        <property name="hibernate.bytecode.use_reflection_optimizer">true</property>
+        <property name="hibernate.jdbc.wrap_result_sets">true</property>
+        <!-- cache -->
+        <property name="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</property>
+        <property name="hibernate.cache.use_second_level_cache">true</property>
+        <property name="hibernate.cache.use_query_cache">true</property>
+        <!-- pool -->
+        <property name="hibernate.c3p0.min_size">2</property>
+        <property name="hibernate.c3p0.max_size">10</property>
+        <property name="hibernate.c3p0.timeout">5000</property>
+        <property name="hibernate.c3p0.max_statements">100</property>
+        <!-- search -->
+        <property name="hibernate.search.default.directory_provider">org.hibernate.search.store.FSDirectoryProvider</property>
+        <property name="hibernate.search.default.indexBase">/indexes</property>
+		<!-- debug -->
+		<property name="hibernate.generate_statistics">true</property>
+		<property name="hibernate.show_sql">true</property>
+        <!-- mappings -->
+        <mapping resource="mx/com/recomendare/db/entities/AdvertisedItem.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/Banner.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/BannerStatistic.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/Category.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/CategoryDescription.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/CellCarrier.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/CellNetwork.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/CellTower.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/City.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/CityName.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/ClickstreamStatistic.hbm.xml" />
+        <mapping resource="mx/com/recomendare/db/entities/ClientBrowserStatistic.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Constant.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ConstantName.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Contact.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Country.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/CountryName.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Currency.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/CurrencyName.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Event.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/EventDescription.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/HotspotStatistic.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Item.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemAttribute.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemComment.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemCommentHistoric.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemCommentPicture.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemCommentText.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemContact.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemHistoric.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemLocation.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemPicture.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemPrice.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemResume.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/ItemSubmittedBy.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Label.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Language.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Location.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Person.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Picture.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/PictureComment.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/PostalCode.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/RecommenderDiff.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Request.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/RequestComment.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/SearchStatistic.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Street.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Subcategory.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/SubcategoryDescription.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/User.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserConfiguration.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserConfigurationLocation.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserFavorite.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserFavoriteComment.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserFriend.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserGroup.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserProfile.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserSession.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/UserSessionHistoric.hbm.xml" />
+		<mapping resource="mx/com/recomendare/db/entities/Zone.hbm.xml" />
+		<!-- events - for hibernate search -->
+		<event type="post-update">
+            <listener class="org.hibernate.search.event.FullTextIndexEventListener"/>
+        </event>
+        <event type="post-insert">
+            <listener class="org.hibernate.search.event.FullTextIndexEventListener"/>
+        </event>
+        <event type="post-delete">
+            <listener class="org.hibernate.search.event.FullTextIndexEventListener"/>
+        </event>
+    </session-factory>
+</hibernate-configuration>

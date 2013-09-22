@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.Language" table="language" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="code" type="string">
+            <column name="code" length="2" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="20" />
+        </property>
+        <property name="characterSet" type="string">
+            <column name="character_set" length="7" />
+        </property>
+        <set name="countryNames" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.CountryName" />
+        </set>
+        <set name="constantNames" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ConstantName" />
+        </set>
+        <set name="userFavoriteComments" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.UserFavoriteComment" />
+        </set>
+        <set name="cityNames" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.CityName" />
+        </set>
+        <set name="requestComments" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.RequestComment" />
+        </set>
+        <set name="labels" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Label" />
+        </set>
+        <set name="userConfigurations" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.UserConfiguration" />
+        </set>
+        <set name="currencyNames" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.CurrencyName" />
+        </set>
+        <set name="eventDescriptions" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.EventDescription" />
+        </set>
+        <set name="subcategoryDescriptions" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.SubcategoryDescription" />
+        </set>
+        <set name="pictureComments" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.PictureComment" />
+        </set>
+        <set name="itemCommentTexts" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemCommentText" />
+        </set>
+        <set name="categoryDescriptions" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.CategoryDescription" />
+        </set>
+        <set name="countries" inverse="true">
+            <key>
+                <column name="spoken_language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Country" />
+        </set>
+        <set name="itemResumes" inverse="true">
+            <key>
+                <column name="language_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemResume" />
+        </set>
+    </class>
+</hibernate-mapping>

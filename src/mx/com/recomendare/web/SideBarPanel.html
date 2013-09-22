@@ -1,0 +1,68 @@
+<wicket:panel>
+		<ul>
+			<span wicket:id="recommenderPanel">[RECOMMENDER_PANEL]</span>
+			<li>
+				<h2><span wicket:id="categoriesLabel">[CATEGORIES_LABEL]</span></h2>
+				<span wicket:id="categoriesTagCloud">[CATEGORIES_TAGCLOUD]</span>
+				<p align="right">
+					<a href="#" wicket:id="viewAllCategoriesLink"><span wicket:id="viewAllCategoriesLinkLabel">[MORE]</span> &gt;&gt;</a>
+				</p>
+			</li>
+			<li>
+				<h2><span wicket:id="locationsLabel">[LOCATIONS_LABEL]</span></h2>
+				<span wicket:id="locationsTagCloud">[LOCATIONS_TAGCLOUD]</span>
+				<p align="right">
+					<a href="#" wicket:id="viewAllLocationsLink"><span wicket:id="viewAllLocationsLinkLabel">[MORE]</span> &gt;&gt;</a>
+				</p>
+			</li>
+			
+			<li>
+				<h2><span wicket:id="placeLocation">[PLACE_LOCATION]</span></h2>
+				<center>
+					<table>
+						<tr>
+							<td>
+								<span wicket:id="myLocationCountryCityNavigationPanel">[LINKS]</span>
+							</td>
+						</tr>
+						<tr>
+							<td wicket:id="mapContainer">
+								<form wicket:id="locationForm">
+									<strong><span wicket:id="streetLabel">[STREET]</span></strong>
+									<input wicket:id="street" type="text" />
+									<input wicket:id="update" type="button">
+								</form>
+							</td>
+						</tr>
+					</table>
+				</center>
+			</li>
+			
+			<li>
+				<h2><span wicket:id="lastCommentsLabel">[LASTCOMMENTS_LABEL]</span></h2>
+				<ul>
+				<span wicket:id="lastComments">
+					<li>
+					<b>
+						<a href="#" wicket:id="userDetailLink">
+							<img wicket:id="userPicture"/>					
+							<span wicket:id="userScreenName">[USER_SCREEN_NAME]</span>
+						</a>
+						<br />
+						<a href="#" wicket:id="placeDetailLink">
+							<span wicket:id="ratingPlace">[PLACE]</span> <!--  - <span wicket:id="ratingPlaceCountry">[PLACE_COUNTRY]</span>, <span wicket:id="ratingPlaceCity">[PLACE_CITY]</span> - -->
+						</a>  
+					</b>
+					<span wicket:id="ratingValue">[STARTS]</span>
+					<br />
+   					<span wicket:id="ratingComment">[COMMENT]</span>
+   					<p align="right">
+   					<a href="#" wicket:id="viewRatingDetailLink"><span wicket:id="viewRatingDetailLinkLabel">[DETAIL]</span> &gt;&gt;</a>
+   					</li>
+				</span>
+				</ul>
+				<!-- <div wicket:id="lastCommentsNavigator"></div> -->
+				<a href="#" wicket:id="viewAllRatingsLink"><span wicket:id="viewAllRatingsLinkLabel">[MORE]</span> &gt;&gt;</a>
+			</li>
+		</ul>
+</wicket:panel>

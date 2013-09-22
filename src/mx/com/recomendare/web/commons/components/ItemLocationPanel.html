@@ -1,0 +1,33 @@
+<wicket:panel>
+	<table>
+ 	  	<tr>
+   	  		<td>
+   				<h3><span wicket:id="locationLabel">[LOCATION_LABEL]</span></h3>  	  			
+   	  		</td>
+   	  		<td>
+   	  			<h3><span wicket:id="addressLabel">[ADDRESS_LABEL]</span></h3>
+   	  		</td>
+   	  	</tr>
+        <tr>
+             <td>
+                 <a wicket:id="viewOnInteractiveMapLink"><img wicket:id="mapLocationImage" /></a>
+                 <p><a href="#" wicket:id="viewAnotherItemsNearOfThisLink"><font size="-1"><span wicket:id="viewAnotherItemsNearOfThisLinkLabel">[VIEW_NEAR_THIS]</span> <img wicket:id="viewAnotherItemsNearOfThisLinkImage" /></font></a></p>
+             </td>
+             <td>
+               	  <span wicket:id="streetOfLabel">[STREET_OF_LABEL]</span> <span wicket:id="streetName">[STREET_NAME]</span> 
+               	  <br />
+               	  <span wicket:id="streetNumberLabel">[STREET_NUMBER_LABEL]</span> <span wicket:id="streetNumber">[STREET_NUMBER]</span>
+                  <br />
+                  <span wicket:id="phoneNumberLabel">[PHONE_NUMBER_LABEL]</span> <span wicket:id="phoneNumber">[PHONE_NUMBER]</span>
+                  <br />
+                  <span wicket:id="addressCityOfLabel">[CITY_OF_LABEL]</span> <span wicket:id="addressCityName">[CITY_NAME]</span>
+                  <br />
+                  <span wicket:id="addressCountryName">[COUNTRY_NAME]</span>
+                  <p />
+                  <p>
+                   	<a href="#" wicket:id="homePageAddressLink"><font size="-1"><span wicket:id="homePageAddressLinkLabel">[OFFICIAL_SITE_LABEL]</span></font> <img wicket:id="homePageAddressLinkImage" /></a>
+                  </p>
+             </td>
+         </tr>
+        </table>
+</wicket:panel>

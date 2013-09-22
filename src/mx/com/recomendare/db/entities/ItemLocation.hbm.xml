@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.ItemLocation" table="item_location" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="street" class="mx.com.recomendare.db.entities.Street" fetch="select">
+            <column name="street_id" />
+        </many-to-one>
+        <many-to-one name="location" class="mx.com.recomendare.db.entities.Location" fetch="select">
+            <column name="location_id" />
+        </many-to-one>
+        <property name="streetOutsideNumber" type="string">
+            <column name="street_outside_number" length="5" />
+        </property>
+        <property name="streetInsideNumber" type="string">
+            <column name="street_inside_number" length="5" />
+        </property>
+        <property name="locationName" type="string">
+            <column name="location_name" length="30" />
+        </property>
+        <set name="items" inverse="true">
+            <key>
+                <column name="item_location_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Item" />
+        </set>
+    </class>
+</hibernate-mapping>

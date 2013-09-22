@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.BannerStatistic" table="banner_statistic" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="user" class="mx.com.recomendare.db.entities.User" fetch="select">
+            <column name="user_id" />
+        </many-to-one>
+        <many-to-one name="clientBrowserStatistic" class="mx.com.recomendare.db.entities.ClientBrowserStatistic" fetch="select">
+            <column name="client_browser_statistic_id" />
+        </many-to-one>
+        <many-to-one name="banner" class="mx.com.recomendare.db.entities.Banner" fetch="select">
+            <column name="banner_id" />
+        </many-to-one>
+        <property name="locationId" type="java.lang.Integer">
+            <column name="location_id" />
+        </property>
+        <property name="sessionId" type="string">
+            <column name="session_id" length="32" />
+        </property>
+        <property name="onPage" type="string">
+            <column name="on_page" length="50" />
+        </property>
+        <property name="onDate" type="timestamp">
+            <column name="on_date" length="29" />
+        </property>
+    </class>
+</hibernate-mapping>

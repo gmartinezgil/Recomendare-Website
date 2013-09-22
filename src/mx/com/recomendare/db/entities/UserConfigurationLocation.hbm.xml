@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.UserConfigurationLocation" table="user_configuration_location" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="constant" class="mx.com.recomendare.db.entities.Constant" fetch="select">
+            <column name="type_id" />
+        </many-to-one>
+        <many-to-one name="location" class="mx.com.recomendare.db.entities.Location" fetch="select">
+            <column name="location_id" />
+        </many-to-one>
+        <many-to-one name="userConfiguration" class="mx.com.recomendare.db.entities.UserConfiguration" fetch="select">
+            <column name="user_configuration_id" />
+        </many-to-one>
+        <property name="sessionId" type="string">
+            <column name="session_id" length="32" />
+        </property>
+        <property name="ipAddress" type="string">
+            <column name="ip_address" length="16" />
+        </property>
+        <property name="onDate" type="timestamp">
+            <column name="on_date" length="29" />
+        </property>
+        <property name="name" type="string">
+            <column name="name" length="30" />
+        </property>
+        <property name="isCurrentLocation" type="java.lang.Boolean">
+            <column name="is_current_location" />
+        </property>
+    </class>
+</hibernate-mapping>

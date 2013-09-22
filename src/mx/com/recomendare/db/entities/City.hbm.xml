@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.City" table="city" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="location" class="mx.com.recomendare.db.entities.Location" fetch="select">
+            <column name="location_id" />
+        </many-to-one>
+        <many-to-one name="country" class="mx.com.recomendare.db.entities.Country" fetch="select">
+            <column name="country_id" />
+        </many-to-one>
+        <property name="timezone" type="string">
+            <column name="timezone" length="30" />
+        </property>
+        <property name="byServiceName" type="string">
+            <column name="by_service_name" length="30" />
+        </property>
+        <set name="userConfigurations" inverse="true">
+            <key>
+                <column name="city_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.UserConfiguration" />
+        </set>
+        <set name="zones" inverse="true">
+            <key>
+                <column name="city_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Zone" />
+        </set>
+        <set name="cityNames" inverse="true">
+            <key>
+                <column name="city_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.CityName" />
+        </set>
+    </class>
+</hibernate-mapping>

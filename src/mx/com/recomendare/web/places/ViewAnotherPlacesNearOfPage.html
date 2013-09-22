@@ -1,0 +1,38 @@
+<wicket:extend>
+		<div class="post">
+			<div class="title">
+				<h2>Lugares cercanos a <span wicket:id="nearbyPlacesLabel"></span></h2>
+			</div>
+			<div class="entry">
+				<h3><span wicket:id="mapLabel"></span></h3>
+				<a name="map"></a>
+				<div wicket:id="gmap" style="margin-left: auto; margin-right: auto; width: 450px; height: 300px;">[GMAP]</div>
+				<br />
+				<form wicket:id="placeOptionsForm">
+					<span wicket:id="mapOptionsLabel"></span>
+				</form>
+				<h3><span wicket:id="placesNearByLabel"></span></h3>
+				<table cellspacing="0" class="dataview">
+					<tbody>
+						<tr wicket:id="placesNearBy">
+							<td>
+								<blockquote>
+									<a href="#" wicket:id="viewPlaceDetailLink">
+										<img wicket:id="picturePlace"/>
+										<span wicket:id="namePlaceLabel"></span>
+									</a> - <span wicket:id="placeRating"></span>
+									<br />
+									<span wicket:id="placeDescription"></span>
+									<p align="right">
+										<a href="#map" wicket:id="viewPlaceLocationOnMapLink"><font size="-1"><span wicket:id="locateOnMapLabel">[LOCATE_ON_MAP]</span></font><img wicket:id="pictureLocateOnMap"/></a>
+									</p>
+								</blockquote>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<p>			
+				<div wicket:id="placesNearByNavigator"></div>
+			</div>
+		</div>
+</wicket:extend>

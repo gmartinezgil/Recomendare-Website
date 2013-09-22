@@ -1,0 +1,120 @@
+<wicket:extend>
+    <div class="post">
+        <div class="title">
+            <h2><span wicket:id="placeName"></span></h2>
+            <p><a href="#" wicket:id="viewCountryLink"><img wicket:id="countryLinkImage" /> <font size="-1"><span wicket:id="countryLinkName">[VIEW_COUNTRY]</span></font></a> &gt; <a href="#" wicket:id="viewCityLink"><font size="-1"><span wicket:id="cityOfLabel">[CITY_OF_LABEL]</span> <span wicket:id="cityLinkName">[VIEW_CITY]</span></font></a> &gt; <a href="#" wicket:id="placeCategoryLink"><span wicket:id="placeCategoryLabel">[CATEGORY]</span></a> &gt; <a href="#" wicket:id="placeSubCategoryLink"><span wicket:id="placeSubCategoryLabel">[SUBCATEGORY]</span></a></p>
+            <!--  <p><a wicket:id="placeFeed" href="#">Place</a></p> -->
+        </div>
+        <div class="entry">
+        	<table>
+        		<tr>
+        			<td>
+        				<span wicket:id="linksToPage">[LINKS]</span>
+        			</td>
+        			<td>
+        				<span wicket:id="favoritesLinkPanel">[FAVORITES]</span>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>
+        				<a wicket:id="viewAllPicturesFromPlaceLink"><img wicket:id="firstPlacePicture" /></a>
+            		</td>
+        			<td align="right">
+        				<a href="#"><img wicket:id="googleAdSenseImage" /></a>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>
+        				<img wicket:id="ligthBoxZoom" /> <span wicket:id="ligthBoxPicture">[LIGHT_BOX]</span>
+        				<br />
+            			<img wicket:id="secondPlacePicture" /> <img wicket:id="thirdPlacePicture" /> <a href="#" wicket:id="addMorePicturesLink"><span wicket:id="addMorePicturesLinkLabel">[MORE_PICTURES_LABEL]</span> <img wicket:id="addMorePicturesLinkImage" /></a>
+        			</td>
+        			<td>
+        				&nbsp;
+        			</td>
+        		</tr>
+        	</table>
+        	<p>
+        	<h3><span wicket:id="placeOverallRatingPanel"></span> - <a href="#comments"><span wicket:id ="placeOverallRatingComments"></span> <span wicket:id="placeCommentsLabel"></span>.</a></h3>
+            <h3><span wicket:id="placeDescriptionName"></span></h3>
+            <span wicket:id="placeDescription"></span>
+            <p>
+            <h3><span wicket:id="placePriceRangeLabel">[RANGE_LABEL]</span> <span wicket:id="placePriceFromLabel">[FROM_LABEL]</span> <span wicket:id="placePriceMinValue">[MIN_VALUE]</span> <span wicket:id="placePriceUntilLabel">[UNTIL_LABEL]</span> <span wicket:id="placePriceMaxValue">[MAX_VALUE]</span></h3>
+            <p>
+              <table>
+              	  <thead>
+              	  	<tr>
+              	  		<td>
+            				<h3><span wicket:id="placeLocation">[LOCATION_LABEL]</span></h3>  	  			
+              	  		</td>
+              	  		<td>
+              	  			<h3><span wicket:id="placeAddress">[ADDRESS_LABEL]</span></h3>
+              	  		</td>
+              	  	</tr>
+              	  </thead>
+                  <tbody>
+                      <tr>
+                          <td>
+                              <a wicket:id="viewPlaceOnInteractiveMap"><img wicket:id="pictureMapLocation" /></a>
+                              <p><a href="#" wicket:id="viewAnotherPlacesNearOfLink"><font size="-1"><span wicket:id="viewAnotherPlacesNearOfLabel">[VIEW_NEAR]</span> <img wicket:id="nearByPlacesMapPicture" /></font></a></p>
+                          </td>
+                          <td>
+                          	  <span wicket:id="streetOfLabel">[STREET_OF_LABEL]</span> <span wicket:id="placeStreetName"></span> 
+                          	  <br />
+                          	  <span wicket:id="numberLabel">[NUMBER_LABEL]</span> <span wicket:id="placeStreetNumber"></span>
+                              <br />
+                              <span wicket:id="phoneNumberLabel">[PHONE_NUMBER_LABEL]</span> <span wicket:id="placePhoneNumber"></span>
+                              <br />
+                              <span wicket:id="cityOfLabel">[CITY_OF_LABEL]</span> <span wicket:id="placeCityName"></span>
+                              <br />
+                              <span wicket:id="placeCountryName"></span>
+                              <p />
+                              <p>
+                              	<a href="#" wicket:id="placeInternetAddressLink"><font size="-1"><span wicket:id="officialSiteLabel">[OFFICIAL_SITE_LABEL]</span></font> <img wicket:id="officialSiteImage" /></a>
+                              </p>
+                          </td>
+                      </tr>
+                  </tbody>
+              </table>
+            <p><a href="#"><img wicket:id="googleAdSenseBannerImage" /></a></p>
+            <h3><span wicket:id="placeCommentsName" title="comments">[COMMENTS_LABEL]</span></h3>
+            <span wicket:id="comments"></span>
+            <table cellspacing="0" class="dataview">
+                <tbody>
+                    <tr wicket:id="placeComments">
+                        <td>
+                            <blockquote>
+                                <a href="#" wicket:id="userDetailLink">
+                                    <img wicket:id="placeCommentUserPicture"/>
+                                    <span wicket:id="placeCommentUserScreenName"></span>
+                                </a> - <span wicket:id="placeCommentRating"></span>
+                                <br />
+                                <span wicket:id="placeComment"></span>
+                                <p align="right">
+                                	<span wicket:id="itServeYouThisCommentLabel"></span> <a href="#" wicket:id="commentThumbUp"><img wicket:id="thumbUpImage" /><span wicket:id="commentsThumbUpLabel">[THUMBS_UP]</span> <span wicket:id="commentVotes">[VOTES]</span></a> | <a href="#" wicket:id="commentThumbDown"><img wicket:id="thumbDownImage" /><span wicket:id="commentsThumbDownLabel">[THUMBS_DOWN]</span> <span wicket:id="commentVotes">[VOTES]</span>.</a>
+                                </p>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>			
+            <div wicket:id="placeCommentsNavigator"></div>
+            
+            <p>
+            	<ul wicket:id="relatedSitesFromThisList">
+            		<li>
+            			<a href="#" wicket:id="relatedSiteLink">
+            				<span wicket:id="relatedSiteLinkLabel"></span>
+            			</a>
+            			<br />
+            			<span wicket:id="relatedSiteDescriptionLabel"></span>
+            			<br />
+            			<b><span wicket:id="relatedSiteLinkURL"></span></b>
+            		</li>
+            	</ul>
+            </p>
+            
+        </div>
+    </div>
+</wicket:extend>

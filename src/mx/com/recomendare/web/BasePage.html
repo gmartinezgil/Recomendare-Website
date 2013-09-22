@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title wicket:id="mainTitle">[TITLE]</title> 
+	<meta name="description" wicket:id="metaDescription" />
+	<meta name="keywords" wicket:id="metaKeywords" />	
+	<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+	<link rel="shortcut icon" href="favicon.ico" >
+	<script type="text/javascript" src="javascript/commons.js"></script>
+	<script type="text/javascript">
+		<!--
+			 window.onload = setupFunc;
+		-->
+	</script>
+</head>
+
+<body>
+	<!-- start header -->
+	<div id="header">
+		<img src="images/ajax-loader.gif" id="bysy_indicator"  alt="busy" style="display:none" height="16" width="16"/>
+		<span wicket:id="headerPanel"></span>
+	</div>
+	<!-- end header -->
+	
+	<!-- star menu -->
+	<div id="menu">
+		<span wicket:id="menuPanel"></span>
+	</div>
+	<!-- end menu -->
+	
+	<!-- start page -->
+	<div id="page">
+	
+		<!-- start ads -->
+		<div id="ads">
+			<span wicket:id="adsPanel"></span>
+		</div>
+		<!-- end ads -->
+	
+		<!-- start content -->
+		<div id="content">
+			<wicket:child/>			
+		</div>
+		<!-- end content -->
+		
+		<!-- start sidebar -->
+		<div id="sidebar">
+			<span wicket:id="sidebarPanel"></span>
+		</div>
+		<!-- end sidebar -->
+		
+	</div>
+	<!-- end page -->
+
+	<!-- start footer -->
+	<div id="footer">
+		<span wicket:id="footerPanel"></span>
+	</div>
+	<!-- end footer -->
+
+	<script type="text/javascript">
+		<!--
+			/*attach a handler to the onmousedown event that calls a function to store the values*/
+			document.onmousedown = getMouseXY;
+		-->
+	</script>
+	
+	<!-- Piwik -->
+		<a href="http://piwik.org" title="Google Analytics alternative" onclick="window.open(this.href);return(false);">
+		<script type="text/javascript" script src='http://localhost/piwik/piwik.js'></script>
+		<script type="text/javascript">
+			piwik_action_name = document.title;
+			piwik_idsite = 1;
+			piwik_url = "http://localhost/piwik/piwik.php";
+			piwik_log(piwik_action_name, piwik_idsite, piwik_url);
+		</script>
+		<object><noscript><p>Google Analytics alternative <img src="http://localhost/piwik/piwik.php?idsite=1" style="border:0" alt=""/></p></noscript></object></a>
+	<!-- End Piwik Tag -->
+	
+</body>
+</html>

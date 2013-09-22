@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<elements> <!-- xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://server002.dapper.net/websiteServices/generate-dapp-xsd.php?dappName=StarbucksMexico" -->
+  <dapper>
+    <dappName>StarbucksMexico</dappName>
+    <dappTitle>Starbucks Mexico</dappTitle>
+    <urls>
+      <url>http://www.alsea.com.mx/starbucks/tiendas.php</url>
+    </urls>
+    <applyToUrl>http://www.alsea.com.mx/starbucks/tiendas.php</applyToUrl>
+    <executionTime>0.295</executionTime>
+    <ranAt>2008-03-26 15:12:11</ranAt>
+    <encoding>windows-1252</encoding>
+    <ranEventChain>false</ranEventChain>
+    <inputVars/>
+  </dapper>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">AEROPUERTO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Aeropuerto Int. de la Cd. de México Edif. B 1er. Piso Loc. 20, 15620 Venustiano Carranza, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">2599 0297 5785 8557</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">AEROPUERTO 3 CENCA PB</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Aeropuerto Int. de la Cd. de México Loc. 18 - PB Edif. D 15620 Venustiano Carranza, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">2599 0738</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">AEROPUERTO INTL 2</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Aeropuerto Int. de la Cd. de México Loc. 66 1er. Nivel Edif. B, Col. Peñón de los Baños, 15620 Venustiano Carranza, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">2599 07992599 0798</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">AEROPUERTO NACIONAL PB SALA B (D 8)</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Aeropuerto Int. de la Cd. de México PB Ambulantorio Loc. D8, 15620 Venustiano Carranza, D.F.</Store_Address>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">AEROPUERTO SALA BRAVO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Aeropuerto Int. de la Cd. de México Área Nacional, 1er. Piso, Sala B, Loc. A-6, 15620 Venustiano Carranza, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">2598 00282598 0030</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">ÁGUILAS</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Calz. de los Leones No. 145 Loc. 19 y 20 Plaza Las Águilas, Col. Las Águilas, 01710 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5660 3601 5651 6604</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">ALTAVISTA 147</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Altavista No. 147 Col. San Ángel Inn, 01060 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5550 5291</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">ANGEL</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Paseo de la Reforma No. 325 Loc. 2, 3, 4 y 5 Pasaje Manhattan Deli Col. Cuauhtémoc, 06500 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5525 91435525 9167</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">ANTARA LOS ATRIOS</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Ejército Nacional No. 843 Loc. F 114, Col. Granada , 11591 Miguel Hidalgo, D.F.</Store_Address>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">AV. DE LA PAZ</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. de la Paz No. 14 Loc. 1 Col. San Ángel, 01000 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5616 84915616 8497</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">BOSQUES</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Paseo de los Laureles No. 458 Loc. 4 Bosques de las Lomas Secc. XV 05120 Cuajimalpa, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">2167 7123 2167 7125</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">C.C. SANTA FE</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Vasco de Quiroga No. 3800 Loc. 255, Col. Antigua Mina la Totolapa, 05109 Cuajimalpa, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">2167 4198 2167 4214</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">CAMPOS ELISEOS</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Galileo No. 8 Loc. 3 Polanco, 11590 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5280 9245 5280 9084</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">CENTRO COYOACÁN</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Coyoacán No. 2000 Loc. 201-A Col. Xoco, 03330 Benito Juárez, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5604 5990</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">CHOLULA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">5 de Mayo No. 1427, San Andrés Cholula, 72810 San Andrés Cholula, Pue.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">(01222) 261 5730</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">CONDESA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Michoacán No. 139 esq. Cuautla, Condesa, 06140 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5553 5214 5286 5529</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">CORPORATIVO POLANCO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Jaime Balmes No. 8 Col. Los Morales Polanco, 11510 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5280 8805 5280 7983</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">GRAN SUR</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. del Imán No. 151 Loc. 98, Pedregal de Carrasco, 04739 Coyoacán, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5171 01485171 0149</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">INSURGENTES JUAN PABLO II</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Insurgentes Sur No. 1743 Col. Guadalupe Inn, 01020 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5662 82405662 8539</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">INSURGENTES LA JOYA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Insurgentes Sur No. 4184 PB Loc. 1, Col. La Joya, 14000 Tlalpan, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5846 7786 5846 7788</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">INSURGENTES PARROQUIA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Insurgentes Sur No. 1405 Col. Insurgentes Mixcoac, 03910 Benito Juárez, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5563 79575563 3726</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">INSURGENTES RELOX</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Insurgentes Sur No. 2374 Col. Chimalistac, 01070 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5616 72315616 7782</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">JUÁREZ</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Juárez No. 2511 entre 25 Y 23 Sur, Col. Sta. Cruz Los Ángeles, 72400 Puebla, Pue.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">(01222) 231 5786(01222) 231 2469</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">LA PAZ</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Huauchinango No. 57 entre Teziutlán Norte y 3 Poniente Col. La Paz, 72160 Puebla, Pue.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">(01222) 226 5724</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">MASARYK</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Pdte. Mazaryk No. 360 Loc. 5-L y 19-9 C.C. Pasaje Polanco, Polanco 11560 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5280 7982 5280 8164</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">MAZARYK SPENCER</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Pdte. Mazaryk No. 39 Col. Chapultepec Morales, 11560 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5545 6983 5545 6984</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">METROPOLI PATRIOTISMO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Patriotismo No. 229 Loc. 14 esq. Pensilvanya, Col. Nápoles, 03810 Benito Juárez, D.F.</Store_Address>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">MIGUEL A. DE QUEVEDO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Miguel Ángel de Quevedo No. 310 Col. Villas Coyoacán, 04000 Coyoacán, D.F</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5658 95915658 2080</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">MIRAMONTES</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Canal de Miramontes No. 2091 Col. Los Girasoles de Coyoacán, 04920 Coyoacán, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5678 4252 5678 4253</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">MONTE EVEREST</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Monte Everest No. 625 Col. Lomas de Chapultepec, 11000 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5540 4508 5540 5829</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">NUEVO LEÓN</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Tlaxcala No. 207 y 209 entre Baja California y Aguascalientes, Col. Hipódromo Condesa, 06100 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5212 12865212 1287</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">OLIVAR</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Olivar de los Padres No. 1086 Loc. 3 Col. Oliver de los Padres, 01770 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5425 7502 5425 0181</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PARQUE DELTA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Cuauhtémoc esq. Obrero Mundial, Col. Narvarte, C.C. Parque Delta, 03000 Benito Juárez, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5530 19405530 2270</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PEDREGAL</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Crater No. 709 Loc. D y E Pedregal de San Ángel, 01900 Alvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5135 44055135 4407</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PILARES</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Pilares No. 541 bis Col. del Valle 03100 Benito Juárez, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5605 26645605 2610</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PLAZA ALAMEDA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Juárez No. 76 esq. Balderas Col. Centro, 06050 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5518 21465518 2330</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PLAZA INN</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">C.C. Plaza Inn Insurgentes Sur No. 1971 Col. Guadalupe Inn, 01020 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5662 41515663 4000</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PLAZA LA ROSA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Londres No. 127, Loc. 38, Plaza La Rosa, Zona Rosa, 06600 Cuauht?moc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5207 3522 5207 5018</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PLAZA LILAS</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Bosque de Lilas No. 92 Loc. 42, C.C. Plaza Lilas, Bosques de las Lomas, 11700 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">1327 8057 1327 8058</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PLAZA SANTA TERESA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Blvd. Adolfo López Mateos No. 4020 Loc. 43-C Plaza Santa Teresa, Col. Jardines del Pedregal, 01900 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5135 50265135 5024</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PRADO NORTE</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Prado Norte No. 324 Loc. 2 Col. Lomas de Chapultepec, 11000 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5540 7011 5540 7186</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PUEBLA LAS ÁNIMAS</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Circ. Int. Juan Pablo II No. 3302 Loc. 5, 6 y 7 (Antes 39 Poniente), Col. Ánimas, 72400 Puebla, Pue.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">(01222) 230 4698</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">PUEBLA MAZARYK PLAZA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Blvd. Atlixcayotl No. 1501 Loc. 18, San Andrés Cholula, 72810 San Andrés Cholula, Pue.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">(01222) 225 7113(01222) 223 2879</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">SAN JERONIMO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Blvd. Adolfo López Mateos s/n Col. San Jerónimo Lídice, 10200 Magdalena Contreras, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5683 69785668 2810</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">SANTA FE II</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Guillermo González Camarena No. 1500 Loc. 1, Centro de Cd. Santa Fe, 01210 Álvaro Obregón, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5292 80625292 8059</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">SANTA FE IMAX</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Aut. México-Toluca No. 1235 Loc. 1, Col. Santa Fe, 05120 Cuajimalpa, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5292 88585292 8859</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">SANTA TERESA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Cam. Santa Teresa No.13, Col. H?roes de Padierna, 14200 Tlalpan, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5568 6972 5652 5706</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">SUPERAMA SANTA FE</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Tamaulipas No. 3000 C.C. Superama Santa Fe, Santa Fe, 05340 Cuajimalpa, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5292 8201 5292 8202</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">TECAMACHALCO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Cofre de Perote No. 230 esq. Sierra Nevada Guadarrama Col. Lomas de Barrilaco, 11000 Miguel Hidalgo, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5202 6170 5202 6276</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">TEPEPAN</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Perif?rico Sur No. 4991 Loc. 1, Tepepan, 14610 Tlalpan, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5489 7907</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">TORRE MAYOR</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Paseo de la Reforma No. 505 Loc. PB 11 Col. Cuauhtémoc 06500 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5211 50365211 5042</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">VISTA HERMOSA</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Camino al Olivo No. 22 Col. Lomas de Vista Hermosa, 05100 Cuajimalpa, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5253 2721</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">16 DE SEPTIEMBRE</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">16 de Septiembre No. 79, esq. Palma No. 42, Loc. 102, Col. Centro 06000 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5510 86175510 8648</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">AEROPUERTO INTL DUFRY</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Capitán Carlos León s/n Ext. na N12 1er. Nivel Nueva salida Terminal inT. Zona Fed. Aeropuerto Int. de la Cd. de México, 15620 Venustiano Carranza, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">2599 07352599 0737</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">C.C. ANGELÓPOLIS</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Blvd. Niño Poblano No. 2510, C.C. Angelópolis, Col. Concepción de la Cruz, 72450 Puebla, Pue.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">(01222) 225 2390(01222) 225 1849</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">EL TRIÁNGULO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">39 Poniente No. 3515 Loc. 4 Y 5, Centro Comercial El Triángulo, Las Ánimas, 72400 Puebla, Pue.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">(01222) 169 7039(01222) 169 7040</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">GANTE</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Gante No. 4a esq. Madero Centro, 06000 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5512 5248</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">INSURGENTES WTC</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Insurgentes Sur No. 729 esq. Filadelfia, Nápoles, 03810 Benito Juárez, D.F</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5523 84455523 7828</Store_Phone_Number>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">IRRIGACIÓN</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Centro Comercial Galerías Polanco Av. Miguel de Cervantes Saavedra 397 Col. Irrigación</Store_Address>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">MIGUEL ÁNGEL DE QUEVEDO 2</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Miguel Ángel de Quevedo No. 624, Esq. con Tres Cruces. Col. Coyoacán a tres cuadras del Centro de Coyoacán. Col . Coyoacán</Store_Address>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">OBELISCO</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Campos Eliseos 247 Esq. Eugenio Sue Col. Polanco</Store_Address>
+  </Starbuck_Store>
+  <Starbuck_Store groupName="Starbuck Store" type="group">
+    <Store_Name dataType="RawString" fieldName="Store Name" originalElement="span" type="field">TAMAULIPAS</Store_Name>
+    <Store_Address dataType="RawString" fieldName="Store Address" originalElement="span" type="field">Av. Tamaulipas No. 55, Loc. 101 Col. Condesa, 06140 Cuauhtémoc, D.F.</Store_Address>
+    <Store_Phone_Number dataType="RawString" fieldName="Store Phone Number" originalElement="span" type="field">5211 54595211 5460</Store_Phone_Number>
+  </Starbuck_Store>
+</elements>

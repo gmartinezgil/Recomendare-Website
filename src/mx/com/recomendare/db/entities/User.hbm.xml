@@ -1,0 +1,105 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.User" table="user_" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="userProfile" class="mx.com.recomendare.db.entities.UserProfile" fetch="select">
+            <column name="user_profile_id" />
+        </many-to-one>
+        <many-to-one name="userSession" class="mx.com.recomendare.db.entities.UserSession" fetch="select">
+            <column name="user_session_id" />
+        </many-to-one>
+        <many-to-one name="userConfiguration" class="mx.com.recomendare.db.entities.UserConfiguration" fetch="select">
+            <column name="user_configuration_id" />
+        </many-to-one>
+        <many-to-one name="userGroup" class="mx.com.recomendare.db.entities.UserGroup" fetch="select">
+            <column name="user_group_id" />
+        </many-to-one>
+        <many-to-one name="person" class="mx.com.recomendare.db.entities.Person" fetch="select">
+            <column name="person_id" />
+        </many-to-one>
+        <set name="searchStatistics" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.SearchStatistic" />
+        </set>
+        <set name="banners" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Banner" />
+        </set>
+        <set name="clickstreamStatistics" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ClickstreamStatistic" />
+        </set>
+        <set name="itemSubmittedBies" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemSubmittedBy" />
+        </set>
+        <set name="bannerStatistics" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.BannerStatistic" />
+        </set>
+        <set name="events" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Event" />
+        </set>
+        <set name="hotspotStatistics" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.HotspotStatistic" />
+        </set>
+        <set name="userFavorites" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.UserFavorite" />
+        </set>
+        <set name="userFriends" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.UserFriend" />
+        </set>
+        <set name="requestsForToUserId" inverse="true">
+            <key>
+                <column name="to_user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Request" />
+        </set>
+        <set name="itemComments" inverse="true">
+            <key>
+                <column name="user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemComment" />
+        </set>
+        <set name="requestsForFromUserId" inverse="true">
+            <key>
+                <column name="from_user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Request" />
+        </set>
+        <set name="itemHistorics" inverse="true">
+            <key>
+                <column name="modified_by_user_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemHistoric" />
+        </set>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.Contact" table="contact" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="picture" class="mx.com.recomendare.db.entities.Picture" fetch="select">
+            <column name="logo_picture_id" />
+        </many-to-one>
+        <many-to-one name="person" class="mx.com.recomendare.db.entities.Person" fetch="select">
+            <column name="person_id" />
+        </many-to-one>
+        <property name="workPhoneNumber" type="string">
+            <column name="work_phone_number" length="20" />
+        </property>
+        <property name="mobilePhoneNumber" type="string">
+            <column name="mobile_phone_number" length="20" />
+        </property>
+        <property name="homePhoneNumber" type="string">
+            <column name="home_phone_number" length="20" />
+        </property>
+        <property name="skypeContact" type="string">
+            <column name="skype_contact" length="20" />
+        </property>
+        <property name="emailAddress" type="string">
+            <column name="email_address" length="50" />
+        </property>
+        <property name="imAddress" type="string">
+            <column name="im_address" length="50" />
+        </property>
+        <property name="homepageAddress" type="string">
+            <column name="homepage_address" length="100" />
+        </property>
+        <set name="itemContacts" inverse="true">
+            <key>
+                <column name="contact_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemContact" />
+        </set>
+    </class>
+</hibernate-mapping>

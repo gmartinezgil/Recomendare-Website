@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.ItemComment" table="item_comment" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="user" class="mx.com.recomendare.db.entities.User" fetch="select">
+            <column name="user_id" />
+        </many-to-one>
+        <many-to-one name="item" class="mx.com.recomendare.db.entities.Item" fetch="select">
+            <column name="item_id" />
+        </many-to-one>
+        <property name="calification" type="java.lang.Short">
+            <column name="calification" />
+        </property>
+        <property name="onDate" type="timestamp">
+            <column name="on_date" length="29" />
+        </property>
+        <property name="ratedFavorably" type="java.lang.Short">
+            <column name="rated_favorably" />
+        </property>
+        <property name="ratedNotFavorably" type="java.lang.Short">
+            <column name="rated_not_favorably" />
+        </property>
+        <set name="itemCommentHistorics" inverse="true">
+            <key>
+                <column name="item_comment_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemCommentHistoric" />
+        </set>
+        <set name="itemCommentPictures" inverse="true">
+            <key>
+                <column name="item_comment_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemCommentPicture" />
+        </set>
+        <set name="itemCommentTexts" inverse="true">
+            <key>
+                <column name="item_comment_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemCommentText" />
+        </set>
+    </class>
+</hibernate-mapping>

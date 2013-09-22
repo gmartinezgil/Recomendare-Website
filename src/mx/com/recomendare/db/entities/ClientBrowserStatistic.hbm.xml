@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.ClientBrowserStatistic" table="client_browser_statistic" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="ipAddress" type="string">
+            <column name="ip_address" length="15" />
+        </property>
+        <property name="dnsReverseName" type="string">
+            <column name="dns_reverse_name" length="100" />
+        </property>
+        <property name="browserName" type="string">
+            <column name="browser_name" length="30" />
+        </property>
+        <property name="browserVersion" type="string">
+            <column name="browser_version" length="30" />
+        </property>
+        <property name="browserPlatform" type="string">
+            <column name="browser_platform" length="10" />
+        </property>
+        <property name="httpReferer" type="string">
+            <column name="http_referer" length="100" />
+        </property>
+        <set name="bannerStatistics" inverse="true">
+            <key>
+                <column name="client_browser_statistic_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.BannerStatistic" />
+        </set>
+        <set name="searchStatistics" inverse="true">
+            <key>
+                <column name="client_browser_statistic_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.SearchStatistic" />
+        </set>
+        <set name="clickstreamStatistics" inverse="true">
+            <key>
+                <column name="client_browser_statistic_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ClickstreamStatistic" />
+        </set>
+        <set name="hotspotStatistics" inverse="true">
+            <key>
+                <column name="client_browser_statistic_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.HotspotStatistic" />
+        </set>
+    </class>
+</hibernate-mapping>

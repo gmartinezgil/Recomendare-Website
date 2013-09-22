@@ -1,0 +1,53 @@
+<wicket:extend>
+	<div class="post">
+        <div class="title">
+            <h2><span wicket:id="title">[TITLE]</span> - '<span wicket:id="searchKeywords">[SEARCH_KEYWORDS]</span>'</h2>
+        </div>
+        <div class="entry">
+			<span wicket:id="searchPanel">[SEARCH_PANEL]</span>
+			<br />
+			<span wicket:id="totalSearchResultsLabel">[TOTAL_SEARCH_RESULTS]</span> <span wicket:id="totalSearchResultsValue">[VALUE]</span>
+			<p align="right"><span wicket:id="topNavigator">[TOP_NAVIGATOR]</span></p>			
+			<table width="100%">
+				<thead>
+					<tr>
+						<td><strong><span wicket:id="itemResultIdLabel">[ID_LABEL]</span></strong></td>
+						<td wicket:id="orderByLocation"><strong><span wicket:id="itemResultOrderByLocationLabel">[LOCATION_LABEL]</span></strong></td>
+						<td wicket:id="orderByName"><strong><span wicket:id="itemResultOrderByNameLabel">[NAME_LABEL]</span></strong></td>
+						<td wicket:id="orderByDistance"><strong><span wicket:id="itemResultOrderByDistanceLabel">[DISTANCE_LABEL]</span></strong></td>
+						<td wicket:id="orderByRatings"><strong><span wicket:id="itemResultOrderByRatingsLabel">[RATINGS_LABEL]</span></strong></td>
+						<td wicket:id="orderByPrice"><strong><span wicket:id="itemResultOrderByPriceLabel">[PRICE_LABEL]</span></strong></td>
+					</tr>
+				</thead>
+				<tbody>
+					<tr wicket:id="searchResultsListDataView">
+						<td>
+							<span wicket:id="itemResultId">[ID]</span>
+						</td>
+						<td>
+							<span wicket:id="navigation">[NAVIGATION_PANEL]</span>
+						</td>
+						<td width="50%">
+							<a wicket:id="viewSearchResultItemByTextLink">
+								<img wicket:id="searchResultItemLinkPicture" />
+								<span wicket:id="itemResultName">[NAME]</span>
+							</a>
+							<span wicket:id="itemResultDescription">[DESCRIPTION]</span>
+						</td>
+						<td>
+							<span wicket:id="itemResultDistance">[DISTANCE]</span>
+						</td>
+						<td>
+							<span wicket:id="itemResultRating">[RATINGS]</span>
+						</td>
+						<td>
+							<span wicket:id="itemResultPriceMinValue">[MIN_PRICE]</span> - <span wicket:id="itemResultPriceMaxValue">[MAX_PRICE]</span>
+						</td>
+					</tr>
+				</tbody>
+			</table>        
+			<p align="center"><span wicket:id="bottomNavigator">[BOTTOM_NAVIGATOR]</span></p>
+			<img wicket:id="adSenseImage" />
+        </div>
+	</div>
+</wicket:extend>

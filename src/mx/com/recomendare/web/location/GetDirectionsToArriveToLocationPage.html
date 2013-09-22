@@ -1,0 +1,22 @@
+<wicket:extend>
+		<div class="post">
+			<div class="title">
+				<h2><span wicket:id="changePreferedLocationLabel">[PREFERED_LOCATION]</span></h2>
+			</div>
+			<div class="entry">
+				<div wicket:id="gmap" style="margin-left: auto; margin-right: auto; width: 450px; height: 300px;">[GMAP]</div>
+				<br />
+				<form wicket:id="setLocationForm">
+					<div wicket:id="locationsModalWindow"></div>
+					<span wicket:id="countryName">[COUNTRY_NAME]</span> <select wicket:id="country"></select> <span wicket:id="cityName">[CITY_NAME]</span> <select wicket:id="city"></select>
+					<p><br />
+					<span wicket:id="streetName">[STREET_NAME]</span> <input wicket:id="street" type="text" /> <span wicket:id="streetNumberName">[STREETNUMBER_NAME]</span> <input wicket:id="streetNumber" type="text" size="3"/>
+					<p>
+					<span wicket:id="zoneName">[ZONE_NAME]</span> <input wicket:id="zone" type="text" /> <span wicket:id="postalCodeName">[POSTALCODE_NAME]</span> <input wicket:id="postalCode" type="text" size="6" />
+					<p>
+					<input wicket:id="updateLocationButton" type="button" />
+				</form>				
+
+			</div>
+		</div>
+</wicket:extend>

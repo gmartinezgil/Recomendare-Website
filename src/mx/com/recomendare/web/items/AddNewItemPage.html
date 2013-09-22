@@ -1,0 +1,27 @@
+<wicket:extend>
+		<div class="post">
+			<div class="title">
+				<h2><span wicket:id="title">[TITLE]</span></h2>
+			</div>
+			<div class="entry">
+				<form wicket:id="addItemForm">
+					<h3><span wicket:id="itemNameTitle">[ITEM_NAME_TITLE]</span></h3>
+					
+					<span wicket:id="itemCategoryLabel">[CATEGORY_LABEL]</span> <select wicket:id="category"></select>
+					<p>
+					<span wicket:id="itemSubCategoryLabel">[SUBCATEGORY_LABEL]</span> <select wicket:id="subCategory"></select>
+					<p>
+					<span wicket:id="itemNameLabel">[ITEM_LABEL]</span> <input wicket:id="name" type="text"/> <input wicket:id="searchItemButton" type="button"> <img wicket:id="pictureItemFounded"/>
+					<p>
+					<span wicket:id="itemDescriptionLabel">[DESCRIPTION_LABEL]</span>
+					<br />
+					<textarea wicket:id = "description" cols="60" rows="10">[DESCRIPTION]</textarea>
+					
+					<h3><span wicket:id="itemDetailsTitle">[ITEM_DETAILS_TITLE]</span></h3>
+					
+					<p />
+					<input wicket:id="saveItemButton" type="submit"> <input wicket:id="cancelItemButton" type="button">
+				</form>
+			</div>
+		</div>
+</wicket:extend>

@@ -1,0 +1,17 @@
+<wicket:panel>
+	<div wicket:id="signInModalWindow"></div>
+	<div>
+		<p align="right"><a wicket:id="editTextLink" class="yo">&nbsp;</a></p>
+	</div>
+	<div wicket:id="readOnlyModeContainer">
+		<span wicket:id="text">[TEXT]</span>
+	</div>
+	<div wicket:id="editModeContainer">
+		<form wicket:id="editableTextForm">
+			<textarea wicket:id="editor" id="editor" name="editor" rows="10" cols="60"></textarea>
+        	<p>
+        	<input wicket:id="save" type="submit" />
+        	<input wicket:id="cancel" type="reset" />
+		</form>
+	</div>
+</wicket:panel>

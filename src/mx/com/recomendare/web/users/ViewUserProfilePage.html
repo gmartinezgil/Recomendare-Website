@@ -1,0 +1,27 @@
+<wicket:extend>
+		<div class="post">
+			<div class="title">
+				<h2><span wicket:id="userProfileLabel"></span></h2>
+			</div>
+			<div class="entry">
+				<img wicket:id="userProfilePicture"/>
+				<h3><span wicket:id="userProfileName">[NAME]</span></h3>
+				<p align="right"/>
+				<a href="#" wicket:id="addAsFriendLink"><font size="-1"><span wicket:id="addAsFriendLabel">[ADD_FRIEND]</span></font><img wicket:id="addPicture"/></a>
+				<p>				
+				<h3><span wicket:id="favoritesTitleLabel">[FAVORITES]</span></h3>
+				<br />
+				<span wicket:id="favorites">
+					<ul>
+						<a href="#" wicket:id="viewFavoriteItemLink">
+						<img wicket:id="itemPicture"/>
+						<b><span wicket:id="itemName"></span></b>	
+						</a>
+					</ul>	
+				</span>
+				<div wicket:id="itemsNavigator"></div>
+				<p>
+				Localizacion: <a href="#" wicket:id="viewCountryProfilesLink"><span wicket:id="countryLabel"></span></a> > <a href="#" wicket:id="viewCityProfilesLink"><span wicket:id="cityLabel"></span></a> 
+			</div>
+		</div>
+</wicket:extend>

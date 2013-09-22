@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.Request" table="request" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="constantByTypeId" class="mx.com.recomendare.db.entities.Constant" fetch="select">
+            <column name="type_id" />
+        </many-to-one>
+        <many-to-one name="userByToUserId" class="mx.com.recomendare.db.entities.User" fetch="select">
+            <column name="to_user_id" />
+        </many-to-one>
+        <many-to-one name="userByFromUserId" class="mx.com.recomendare.db.entities.User" fetch="select">
+            <column name="from_user_id" />
+        </many-to-one>
+        <many-to-one name="constantByStatusId" class="mx.com.recomendare.db.entities.Constant" fetch="select">
+            <column name="status_id" />
+        </many-to-one>
+        <property name="onDate" type="timestamp">
+            <column name="on_date" length="29" />
+        </property>
+        <property name="isClosed" type="java.lang.Boolean">
+            <column name="is_closed" />
+        </property>
+        <property name="closedOnDate" type="timestamp">
+            <column name="closed_on_date" length="29" />
+        </property>
+        <set name="requestComments" inverse="true">
+            <key>
+                <column name="request_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.RequestComment" />
+        </set>
+    </class>
+</hibernate-mapping>

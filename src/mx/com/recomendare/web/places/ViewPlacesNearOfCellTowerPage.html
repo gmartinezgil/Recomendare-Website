@@ -1,0 +1,59 @@
+<wicket:extend>
+	<div class="post">
+			<div class="title">
+				<h2><span wicket:id="title">[TITLE_LABEL]</span></h2>
+			</div>
+			<div class="entry">
+				<form wicket:id="placesNearOfCellForm">
+					<div wicket:id="locationNotFoundModalWindow"></div>
+					<span wicket:id="countryName">[COUNTRIE_NAME]</span> <select wicket:id="countries">[COUNTRIES]</select>
+					<br />
+					<span wicket:id="carrierName">[CARRIER_NAME]</span> <select wicket:id="carriers">[CARRIERS]</select>
+					<br />
+					<span wicket:id="cellIdName">[CELL_ID_NAME]</span> <input wicket:id="cellIdText" type="text" size="8" maxlength="8" />
+					<br />
+					<span wicket:id="lacName">[LAC_NAME]</span> <input wicket:id="lacText" type="text" size="5" maxlength="5" />
+					<br />
+					<input wicket:id="updateLocationButton" type="button" />
+					<p>
+						<div wicket:id="gmap" style="margin-left: auto; margin-right: auto; width: 450px; height: 300px;">[GMAP]</div>
+					</p>
+					<span wicket:id="youAreAtLabel">[YOU_ARE_AT]</span> <img wicket:id="myPositionCountryFlag" /> <span wicket:id="myPositionCountryName">[COUNTRY_NAME]</span>, <span wicket:id="cityOfLabel">[CITY_OF]</span> <span wicket:id="myPositionCityName">[CITY_NAME]</span>
+					<!--  
+					<br /> 
+					<a wicket:id="weatherExternalnfoLink"><img wicket:id="myPositionCurrentWeatherImage" /> <span wicket:id="myPositionCurrentWeatherLabel">[CURRENT_CLIMATE]</span>&deg; </a>
+					-->
+					<br />
+					<span wicket:id="nearByPicturesLabel">[PICTURES]</span>
+					<table cellspacing="0" class="dataview">
+		                <tbody>
+		                    <tr wicket:id="nearByPicturesContainer">
+		                        <td wicket:id="nearByPictures">
+	                                <a href="#" wicket:id="viewFullPhotoImageLink">
+	                                    <img wicket:id="viewFullPhotoImage"/>
+	                                    <br />
+	                                    <span wicket:id="viewFullPhotoImageTitle"></span>
+	                                </a>
+		                        </td>
+		                    </tr>
+		                </tbody>
+		            </table>
+		            <br />
+		            <span wicket:id="nearByEventsLabel">[EVENTS]</span>
+					<table cellspacing="0" class="dataview">
+		                <tbody>
+		                    <tr wicket:id="nearByEventsContainer">
+		                        <td wicket:id="nearByEvents">
+	                                <a href="#" wicket:id="viewEventLink">
+	                                	<img wicket:id="viewEventLinkImage" />
+	                                </a>
+	                                <br />
+	                                <span wicket:id="eventDescriptionLabel"></span>
+		                        </td>
+		                    </tr>
+		                </tbody>
+		            </table>
+				</form>
+			</div>
+	</div>
+</wicket:extend>

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.Currency" table="currency" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <property name="code" type="string">
+            <column name="code" length="3" />
+        </property>
+        <property name="symbol" type="java.lang.Character">
+            <column name="symbol" length="1" />
+        </property>
+        <property name="conversionRate" type="java.lang.Double">
+            <column name="conversion_rate" precision="17" scale="17" />
+        </property>
+        <set name="itemPrices" inverse="true">
+            <key>
+                <column name="currency_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemPrice" />
+        </set>
+        <set name="countries" inverse="true">
+            <key>
+                <column name="currency_used_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.Country" />
+        </set>
+        <set name="currencyNames" inverse="true">
+            <key>
+                <column name="currency_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.CurrencyName" />
+        </set>
+    </class>
+</hibernate-mapping>

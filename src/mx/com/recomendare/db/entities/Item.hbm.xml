@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated May 13, 2009 4:44:38 PM by Hibernate Tools 3.2.2.GA -->
+<hibernate-mapping>
+    <class name="mx.com.recomendare.db.entities.Item" table="item" schema="public">
+        <id name="id" type="int">
+            <column name="id" />
+            <generator class="assigned" />
+        </id>
+        <many-to-one name="itemPriceByMinPriceId" class="mx.com.recomendare.db.entities.ItemPrice" fetch="select">
+            <column name="min_price_id" />
+        </many-to-one>
+        <many-to-one name="itemContact" class="mx.com.recomendare.db.entities.ItemContact" fetch="select">
+            <column name="item_contact_id" />
+        </many-to-one>
+        <many-to-one name="itemLocation" class="mx.com.recomendare.db.entities.ItemLocation" fetch="select">
+            <column name="item_location_id" />
+        </many-to-one>
+        <many-to-one name="itemSubmittedBy" class="mx.com.recomendare.db.entities.ItemSubmittedBy" fetch="select">
+            <column name="item_submitted_by_id" />
+        </many-to-one>
+        <many-to-one name="itemPriceByMaxPriceId" class="mx.com.recomendare.db.entities.ItemPrice" fetch="select">
+            <column name="max_price_id" />
+        </many-to-one>
+        <many-to-one name="subcategory" class="mx.com.recomendare.db.entities.Subcategory" fetch="select">
+            <column name="subcategory_id" />
+        </many-to-one>
+        <property name="name" type="string">
+            <column name="name" length="100" />
+        </property>
+        <set name="itemPictures" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemPicture" />
+        </set>
+        <set name="userFavorites" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.UserFavorite" />
+        </set>
+        <set name="advertisedItems" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.AdvertisedItem" />
+        </set>
+        <set name="recommenderDiffsForItemIdA" inverse="true">
+            <key>
+                <column name="item_id_a" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.RecommenderDiff" />
+        </set>
+        <set name="itemComments" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemComment" />
+        </set>
+        <set name="itemResumes" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemResume" />
+        </set>
+        <set name="itemHistorics" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemHistoric" />
+        </set>
+        <set name="recommenderDiffsForItemIdB" inverse="true">
+            <key>
+                <column name="item_id_b" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.RecommenderDiff" />
+        </set>
+        <set name="itemAttributes" inverse="true">
+            <key>
+                <column name="item_id" />
+            </key>
+            <one-to-many class="mx.com.recomendare.db.entities.ItemAttribute" />
+        </set>
+    </class>
+</hibernate-mapping>

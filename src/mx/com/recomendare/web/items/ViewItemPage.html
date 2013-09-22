@@ -1,0 +1,95 @@
+<wicket:extend>
+    <div class="post">
+        <div class="title">
+            <h2><span wicket:id="name"></span></h2>
+            <p><span wicket:id="navigationPanel">[NAVIGATION]</span></p>
+            <!--  <p><a wicket:id="Feed" href="#"></a></p> -->
+        </div>
+        <div class="entry">
+        	<table>
+        		<tr>
+        			<td>
+        				<span wicket:id="linksToPagePanel">[LINKS]</span>
+        			</td>
+        			<td>
+        				<span wicket:id="favoritesLinkPanel">[FAVORITES]</span>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>
+        				<a wicket:id="viewAllPicturesLink"><img wicket:id="firstPicture" /></a>
+            		</td>
+        			<td align="right">
+        				<a><img wicket:id="googleAdSenseImage" /></a>
+        			</td>
+        		</tr>
+        		<tr>
+        			<td>
+        				<img wicket:id="ligthBoxZoom" /> <span wicket:id="ligthBoxPicture">[LIGHT_BOX]</span>
+        				<br />
+            			<img wicket:id="secondPicture" /> <img wicket:id="thirdPicture" /> <a wicket:id="addMorePicturesLink"><span wicket:id="addMorePicturesLinkLabel">[MORE_PICTURES_LABEL]</span> <img wicket:id="addMorePicturesLinkImage" /></a>
+        			</td>
+        			<td>
+        				&nbsp;
+        			</td>
+        		</tr>
+        	</table>
+        	<p>
+        	<h3><span wicket:id="overallRatingPanel">[OVERALL_RATING]</span> - <a href="#comments"><span wicket:id ="numberOfRatingComments"></span> <span wicket:id="ratingCommentsLabel"></span>.</a></h3>
+            <h3><span wicket:id="descriptionLabel">[DESCRIPTION_LABEL]</span></h3>
+            <span wicket:id="description">[DESCRIPTION]</span>
+            <p>
+            <h3><span wicket:id="priceRangeLabel">[PRICE_RANGE_LABEL]</span> <span wicket:id="priceFromLabel">[FROM_LABEL]</span> <span wicket:id="priceMinValue">[MIN_VALUE]</span> <span wicket:id="priceUntilLabel">[UNTIL_LABEL]</span> <span wicket:id="priceMaxValue">[MAX_VALUE]</span></h3>
+            <p>
+            	<h3><span wicket:id="tagsLabel">[TAGS]</span></h3>
+            	<span wicket:id="tags">[ITEM_TAGS]</span>
+            <p>
+              <span wicket:id="locationPanel">[LOCATION_PANEL]</span>
+            </p>
+            <p><a><img wicket:id="googleAdSenseBannerImage" /></a></p>
+            <h3><a name="comments"><span wicket:id="commentsLabel" title="comments">[COMMENTS_LABEL]</span></a></h3>
+            <span wicket:id="commentsEditorPanel">[COMMENTS_EDITOR]</span>
+            <p align="right">
+            	<div wicket:id="topCommentsNavigator">[NAVIGATOR]</div>
+            <table cellspacing="0" class="dataview">
+                <tbody>
+                    <tr wicket:id="comments">
+                        <td>
+                            <blockquote>
+                                <a href="#" wicket:id="commentUserDetailLink">
+                                    <img wicket:id="commentUserDetailLinkImage"/>
+                                    <span wicket:id="commentUserDetailLinkScreenName">[USER_SCREEN_NAME]</span>
+                                </a> - <span wicket:id="commentUserRating">[USER_RATING]</span>
+                                <br />
+                                <span wicket:id="commentUserComment">[USER_COMMENT]</span>
+                                <p align="right">
+                                	<span wicket:id="itServeYouThisCommentLabel">[IT_SERVE_YOU_LABEL]</span> <a href="#" wicket:id="commentUserThumbUpLink"><img wicket:id="commentUserThumbUpLinkImage" /><span wicket:id="commentUserThumbUpValue">[THUMBS_UP_VALUE]</span> <span wicket:id="commentUserThumbUpLinkVotesLabel">[VOTES_LABEL]</span></a> | <a href="#" wicket:id="commentUserThumbDownLink"><img wicket:id="commentUserThumbDownLinkImage" /><span wicket:id="commentUserThumbDownValue">[THUMBS_DOWN_VALUE]</span> <span wicket:id="commentUserThumbDownLinkVotesLabel">[VOTES_LABEL]</span>.</a>
+                                </p>
+                            </blockquote>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <p align="right">			
+            	<div wicket:id="bottomCommentsNavigator">[NAVIGATOR]</div>
+            <!--  
+            <p>
+            	<h3><span wicket:id="relatedSitesToThis">[RELATED_SITES_LABEL]</span></h3>
+            	<br />
+            	<ul wicket:id="relatedSitesFromThisList">
+            		<li>
+            			<a href="#" wicket:id="relatedSiteLink">
+            				<span wicket:id="relatedSiteLinkLabel"></span>
+            			</a>
+            			<br />
+            			<span wicket:id="relatedSiteDescriptionLabel"></span>
+            			<br />
+            			<b><span wicket:id="relatedSiteLinkURL"></span></b>
+            		</li>
+            	</ul>
+            </p>
+            -->
+            <p><a href="#"><img wicket:id="googleAdSenseBannerImage1" /></a></p>
+        </div>
+    </div>
+</wicket:extend>
