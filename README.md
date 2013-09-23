@@ -8,5 +8,5 @@ Recomendare was a spanish language site with support for multilingual for making
 Make use of the Apache Wicket Framework, the Taste recommendation engine, Hibernate, Lucene, Google Maps using the PostgreSQL database and running under the Apache Tomcat Engine.
 
 ![ScreenShot](https://raw.github.com/gmartinezgil/Recomendare-Website/master/screenshoots/home.png)
-![ScreenShot](https://raw.github.com/gmartinezgil/Recomendare-Website/master/screenshoots/location.png)
 ![ScreenShot](https://raw.github.com/gmartinezgil/Recomendare-Website/master/screenshoots/search.png)
+![ScreenShot](https://raw.github.com/gmartinezgil/Recomendare-Website/master/screenshoots/location.png)
